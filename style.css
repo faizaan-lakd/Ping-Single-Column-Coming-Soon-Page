@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.25rem;
+    display: grid;
+    place-content: center;
+}
+
+header {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 0;
+}
+
+.bold {
+    color: hsl(209, 33%, 12%);
+    font-weight: 700;
+}
+
+.logo {
+    margin-bottom: 2.5rem;
+}
+
+input, button {
+    border-radius: 2rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+input {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding-right: 14rem;
+    padding-left: 2rem;
+    border: 1px solid hsl(0, 0%, 59%, 0.5);
+}
+
+input::placeholder {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%, 0.5);
+}
+
+button {
+    font-family: "Libre Franklin", sans-serif;
+    padding-inline: 4rem;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+main {
+    margin-top: 5.5rem;
+}
+
+.error-desktop {
+    padding-left: 2rem;
+    text-align: left;
+    font-size: 0.9375rem;
+    color: hsl(354, 100%, 66%);
+    display: none;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: hsl(209, 33%, 12%);
+}
+
+img {
+    max-width: 40rem;
+    object-fit: cover;
+}
+
+i {
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 59%, 0.5);
+    padding: 1rem 0.75rem;
+    color: hsl(223, 87%, 63%);
+    margin-right: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.copyright {
+    margin-top: 1.75rem;
+    font-size: 0.75rem;
+}
+
+@media (max-width: 690px) {
+    header {
+        margin-top: 2rem;
+    }
+
+    input, button {
+        width: 70%;
+    }
+
+    input {
+        padding: 0;
+        padding-left: 2rem;
+        height: 3.5rem;
+        margin-bottom: 1.5rem;
+        margin-right: 0;
+    }
+
+    input::placeholder {
+        padding-left: 2rem;
+    }
+
+    img {
+        max-width: 25rem;
+    }
+
+    .dashboard-illustration {
+        display: grid;
+        place-content: center;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (max-width: 426px) {
+    header {
+        margin-top: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    img {
+        max-width: 20rem;
+    }
+
+    input, button {
+        padding: 0;
+        height: 2.5rem;
+    }
+
+    input {
+        padding-left: 2rem;
+    }
+
+    .error-desktop {
+        padding: 0;
+        text-align: center;
+    }
+}
